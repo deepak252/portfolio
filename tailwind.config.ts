@@ -9,8 +9,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        darkHover: '#2A004A',
+        lightHover: '#FCF4FF',
+        darkTheme: '#11001F',
+        // background: 'var(--background)',
+        // foreground: 'var(--foreground)',
+      },
+      fontFamily: {
+        Outfit: ['Outfit', 'sans-serif'],
+        Ovo: ['Ovo', 'serif'],
+      },
+      zIndex: {
+        navbar: '20',
+        drawerMobile: '90',
+        modal: '50',
+        toast: '90',
+        loader: '100',
       },
     },
   },

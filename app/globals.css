@@ -5,6 +5,53 @@
 * {
   font-family: Outfit;
 }
+
+@layer base {
+  h1 {
+    @apply text-5xl font-bold;
+  }
+  h2 {
+    @apply text-4xl font-bold;
+  }
+  h3 {
+    @apply text-3xl font-bold;
+  }
+  h4 {
+    @apply text-2xl font-bold;
+  }
+  h5 {
+    @apply text-xl font-bold;
+  }
+  h6 {
+    @apply text-lg font-bold;
+  }
+
+  /* a {
+    @apply font-Ovo;
+  } */
+}
+
+@layer components {
+  .base-btn {
+    @apply flex items-center gap-2 rounded-full border border-transparent px-6 py-2.5 lg:px-8;
+  }
+  .btn-outlined-light {
+    @apply base-btn border-gray-500;
+  }
+  .btn-primary {
+    @apply base-btn bg-gray-800 text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .shadow-hover {
+    @apply shadow-lg hover:shadow-2xl transition-shadow;
+  }
+}
+
 /* 
 :root {
   --background: #ffffff;

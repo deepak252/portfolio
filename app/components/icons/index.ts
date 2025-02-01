@@ -1,0 +1,5 @@
+export { default as CloseIcon } from './CloseIcon'
+export { default as ConnectIcon } from './ConnectIcon'
+export { default as MoonIcon } from './MoonIcon'
+export { default as DownloadIcon } from './DownloadIcon'
+export { default as ArrowRightIcon } from './ArrowRightIcon'
