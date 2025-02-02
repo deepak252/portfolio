@@ -5,9 +5,13 @@ import { ConnectIcon, MoonIcon } from './icons'
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-navbar flex items-center justify-between w-full px-5 py-4 lg:px-8 xl:px-[8%]">
-      <Link href="/" className="text-4xl">
-        Deepak
+    <nav className="bg-white fixed top-0 left-0 right-0 z-navbar flex items-center justify-between w-full px-5 py-4 lg:px-8 xl:px-[8%]">
+      <Link href="/" className="flex items-center gap-1 text-2xl group">
+        <span className="text-xl group-hover:-rotate-12 transform ease-in-out duration-300">
+          ✦
+        </span>
+        <span className="group font-medium">Deepak</span>
+        {/* Deepak */}
         {/* <Image src={DevImage} alt="nav-icon" className="size-8" /> */}
       </Link>
       <ul className="flex items-center gap-6 text-lg bg-gray-100 py-3 px-12 rounded-full max-lg:hidden">
@@ -15,17 +19,17 @@ const Navbar = () => {
           <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#home">About Me</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#home">Services</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#home">My Work</a>
+          <a href="#experience">Experience</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#home">Contact Me</a>
-        </li>
+        </li> */}
       </ul>
       <div className="flex items-center gap-6 lg:gap-8">
         <button>

@@ -33,25 +33,25 @@ const SideMenu = () => {
             </a>
           </li>
           <li>
-            <a href="#home" onClick={closeSideMenu}>
+            <a href="#about" onClick={closeSideMenu}>
               About Me
             </a>
           </li>
           <li>
-            <a href="#home" onClick={closeSideMenu}>
-              Services
+            <a href="#projects" onClick={closeSideMenu}>
+              Projects
             </a>
           </li>
           <li>
-            <a href="#home" onClick={closeSideMenu}>
-              My Work
+            <a href="#experience" onClick={closeSideMenu}>
+              Experience
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#home" onClick={closeSideMenu}>
               Contact Me
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
