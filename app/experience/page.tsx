@@ -68,7 +68,7 @@ const ExperienceItem = ({
       icon={
         <Image
           src={experience.imgPath}
-          className="!size-9 rounded-full"
+          className="rounded-full"
           alt="company-logo"
           fill
         />
