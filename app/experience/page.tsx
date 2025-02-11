@@ -1,20 +1,13 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import TimelineItem from '@/components/TimelineItem'
-import CompanyImg1 from '@/app/assets/images/companies/nmg.png'
-import CompanyImg2 from '@/app/assets/images/companies/byjus.png'
-import CompanyImg3 from '@/app/assets/images/companies/dgtlmart.png'
-
-type Experience = {
-  imgPath: StaticImageData
-  timeline: string
-  title: string
-  company: string
-  description: string[]
-}
+// import CompanyImg1 from '@/app/assets/images/companies/nmg.png'
+// import CompanyImg2 from '@/app/assets/images/companies/byjus.png'
+// import CompanyImg3 from '@/app/assets/images/companies/dgtlmart.png'
+import { Experience } from '@/types'
 
 const experienceList: Experience[] = [
   {
-    imgPath: CompanyImg1,
+    imgPath: '/images/companies/nmg.png',
     timeline: 'Feb 2024 - Present',
     title: 'Software Developer - Frontend',
     company: 'NMG Technologies, Gurugram',
@@ -25,7 +18,7 @@ const experienceList: Experience[] = [
     ],
   },
   {
-    imgPath: CompanyImg2,
+    imgPath: '/images/companies/byjus.png',
     timeline: 'Feb 2023 - Jan 2024',
     title: 'Software Devloper',
     company: 'BYJUs, Gurugram',
@@ -36,7 +29,7 @@ const experienceList: Experience[] = [
     ],
   },
   {
-    imgPath: CompanyImg3,
+    imgPath: '/images/companies/dgtlmart.png',
     timeline: 'July 2021 - Jan 2022',
     title: 'Application Developer Intern',
     company: 'DGTLmart',
@@ -48,7 +41,7 @@ const experienceList: Experience[] = [
   },
 ]
 
-const Experience = () => {
+export default function ExperiencePage() {
   return (
     <section className="max-w-4xl mx-auto pb-4 px-6">
       <h2 className="mb-12">Experience</h2>
@@ -75,8 +68,9 @@ const ExperienceItem = ({
       icon={
         <Image
           src={experience.imgPath}
-          className="size-9 rounded-full"
+          className="!size-9 rounded-full"
           alt="company-logo"
+          fill
         />
       }
       active={active}
@@ -94,5 +88,3 @@ const ExperienceItem = ({
     </TimelineItem>
   )
 }
-
-export default Experience

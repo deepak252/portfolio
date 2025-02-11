@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Skills from './components/Skills'
 import DeveloperIMg from '@/app/assets/images/developer2.png'
 
-export default function About() {
+export default function AboutPage() {
   return (
     <>
       <section className="max-w-4xl mx-auto pb-4 px-6">

@@ -1,6 +1,6 @@
 import DeveloperImg from '@/app/assets/images/developer.png'
 import Image from 'next/image'
-import { ArrowRightIcon, DownloadIcon } from './icons'
+import { ArrowRightIcon, DownloadIcon } from '../../components/icons'
 
 const Introduction = () => {
   return (

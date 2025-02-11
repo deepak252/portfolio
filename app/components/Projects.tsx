@@ -1,13 +1,8 @@
 import Link from 'next/link'
 import CodeImg from '@/app/assets/images/code.png'
-import Image, { StaticImageData } from 'next/image'
-import { ArrowRightIcon } from './icons'
-
-type Project = {
-  imgPath: StaticImageData
-  name: string
-  description: string
-}
+import Image from 'next/image'
+import { ArrowRightIcon } from '../../components/icons'
+import { Project } from '@/types/project'
 
 const projects: Project[] = [
   {

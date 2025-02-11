@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import DeveloperImg from '@/app/assets/images/code.png'
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <>
       <section className="max-w-4xl mx-auto pb-4 px-6">

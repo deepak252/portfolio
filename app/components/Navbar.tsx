@@ -1,10 +1,14 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { DarkModeIcon, CloseIcon, LightModeIcon } from './icons'
+import {
+  DarkModeIcon,
+  CloseIcon,
+  LightModeIcon,
+  MenuIcon,
+} from '../../components/icons'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 import { setTheme } from '@/lib/features/theme/themeSlice'
-import MenuIcon from './icons/MenuIcon'
 
 const Navbar = () => {
   const dispatch = useAppDispatch()
@@ -46,7 +50,7 @@ const Navbar = () => {
           <span className="text-xl group-hover:-rotate-90 group-hover:scale-125 transform ease-in-out duration-300">
             ✦
           </span>
-          <span className="group font-medium">Deepak</span>
+          <span className="group font-medium">Vuejs</span>
         </Link>
 
         <div className="flex items-center gap-6 lg:gap-8">
