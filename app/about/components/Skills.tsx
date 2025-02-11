@@ -2,7 +2,7 @@
 import { useMemo } from 'react'
 import Chip from '@/components/Chip'
 import { useAppSelector, useMounted } from '@/lib/hooks'
-import { getSkillList } from '../utils'
+import { getSkills } from '@/lib/utils'
 
 const Skills = () => {
   const theme = useAppSelector((state) => state.theme.theme)
@@ -10,7 +10,7 @@ const Skills = () => {
 
   const skills = useMemo(() => {
     if (!mounted) return []
-    return getSkillList(theme)
+    return getSkills(theme)
   }, [theme, mounted])
 
   return (

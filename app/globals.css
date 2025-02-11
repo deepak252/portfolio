@@ -63,7 +63,7 @@
   }
 
   .chip {
-    @apply inline-flex items-center gap-2 rounded-full px-2 py-2 border-2 border-blue-500 sm:text-lg;
+    @apply inline-flex items-center gap-2 rounded-full px-1.5 py-1.5 border-2 border-blue-500 sm:text-lg;
   }
 
   .timeline-item {

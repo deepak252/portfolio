@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Skills from './components/Skills'
-import DeveloperIMg from '@/app/assets/images/developer2.png'
 
 export default function AboutPage() {
   return (
@@ -10,7 +9,7 @@ export default function AboutPage() {
         <div className="mt-6">
           <div>
             <p className="text-lg text-light">
-              Hello 👋 I&apos;m Deepak, a Software Engineer with 2+ years of
+              Hello 👋 I&apos;m Deepak, a Software Engineer with 2.5+ years of
               experience in frontend, micro-frontend, backend, and
               microservices. I enjoy solving complex programming challenges,
               staying ahead with the latest technologies, and building scalable,
@@ -21,11 +20,14 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <Image
-          src={DeveloperIMg}
-          alt="about"
-          className="mt-8 rounded-2xl h-52 w-full object-cover sm:h-80"
-        />
+        <div className="relative h-52 w-full sm:h-80">
+          <Image
+            src="/images/developer2.png"
+            alt="about"
+            fill
+            className="mt-8 rounded-2xl object-cover"
+          />
+        </div>
         <Skills />
       </section>
     </>

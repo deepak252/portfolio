@@ -1,18 +1,20 @@
 import Image from 'next/image'
-import CodeImg from '@/app/assets/images/code.png'
 
 const AboutMe = () => {
   return (
     <section id="about-me" className="dashboard-section">
       <h3 className="mb-10">A Little About Me</h3>
       <div className="flex mt-12 gap-8 max-md:flex-col">
-        <Image
-          src={CodeImg}
-          alt="about"
-          className="rounded-xl size-64 max-md:mx-auto"
-        />
+        <div className="relative h-64 w-full min-w-64 max-md:mx-auto">
+          <Image
+            src="/images/code.png"
+            fill
+            alt="about"
+            className="rounded-xl object-cover"
+          />
+        </div>
         <p className="text-lg text-light">
-          Software Engineer with 2+ years of experience in frontend,
+          Software Engineer with 2.5+ years of experience in frontend,
           micro-frontend, backend, and microservices. I enjoy solving complex
           programming challenges, staying ahead with the latest technologies,
           and building scalable, high-performance applications. An adaptable and

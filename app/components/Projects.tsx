@@ -1,31 +1,8 @@
 import Link from 'next/link'
-import CodeImg from '@/app/assets/images/code.png'
 import Image from 'next/image'
 import { ArrowRightIcon } from '../../components/icons'
 import { Project } from '@/types/project'
-
-const projects: Project[] = [
-  {
-    imgPath: CodeImg,
-    name: 'Ludo Multiplayer',
-    description: '',
-  },
-  {
-    imgPath: CodeImg,
-    name: 'Bus Tracking Application',
-    description: '',
-  },
-  {
-    imgPath: CodeImg,
-    name: 'Food Delivery Ecommerce Application',
-    description: '',
-  },
-  // {
-  //   imgPath: CodeImg,
-  //   name: 'Pet Adopt and Finder',
-  //   description: '',
-  // },
-]
+import { projects } from '@/lib/utils'
 
 const Projects = () => {
   return (
@@ -49,11 +26,12 @@ const Projects = () => {
 const ProjectItem = ({ project }: { project: Project }) => {
   return (
     <div className="flex flex-col items-center cursor-pointer group">
-      <div className="relative bg-red size-full rounded-2xl  overflow-hidden bg-white">
+      <div className="relative bg-red h-48 w-full rounded-2xl  overflow-hidden bg-white sm:h-44 lg:h-44">
         <Image
           src={project.imgPath}
+          fill
           alt="project-img"
-          className="h-48 w-full object-cover group-hover:scale-105 transition-all duration-300 sm:h-44 lg:h-44"
+          className="object-cover group-hover:scale-105 transition-all duration-300"
         />
         <div className="absolute inset-0 size-full bg-neutral-800 bg-opacity-30 group-hover:bg-opacity-0 transition-all duration-300" />
       </div>

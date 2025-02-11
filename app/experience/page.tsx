@@ -1,8 +1,5 @@
 import Image from 'next/image'
 import TimelineItem from '@/components/TimelineItem'
-// import CompanyImg1 from '@/app/assets/images/companies/nmg.png'
-// import CompanyImg2 from '@/app/assets/images/companies/byjus.png'
-// import CompanyImg3 from '@/app/assets/images/companies/dgtlmart.png'
 import { Experience } from '@/types'
 
 const experienceList: Experience[] = [
