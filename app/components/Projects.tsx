@@ -36,11 +36,9 @@ const ProjectItem = ({ project }: { project: Project }) => {
         <div className="absolute inset-0 size-full bg-neutral-800 bg-opacity-30 group-hover:bg-opacity-0 transition-all duration-300" />
       </div>
       <div className="py-6">
-        <p className="text-xl font-medium line-clamp-1 mb-2">{project.name}</p>
-        <p className="text-base line-clamp-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
-          voluptates cum asperiores delectus sint dignissimos voluptate, facere
-          sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!
+        <p className="text-xl font-medium line-clamp-1 mb-1">{project.name}</p>
+        <p className="text-base line-clamp-3 text-light">
+          {project.description}
         </p>
       </div>
     </div>

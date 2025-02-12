@@ -139,20 +139,45 @@ export const getSkills = (theme: 'light' | 'dark') => {
 export const projects: Project[] = [
   {
     imgPath: '/images/code.png',
-    name: 'Ludo Multiplayer',
+    name: 'Devstore',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum voluptates cum asperiores delectus sint dignissimos voluptate, facere sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!',
+      'A developer-centric platform facilitating seamless saving and sharing of projects, including websites, apps, and games.',
+    shortDescription:
+      'A developer-centric platform facilitating seamless saving and sharing of projects, including websites, apps, and games.',
+    technologies: [
+      'NodeJS',
+      'ReactJS',
+      'MongoDB',
+      'Javascript',
+      'Typescript',
+      'HTML',
+      'CSS',
+      'TailwindCSS',
+    ],
   },
   {
     imgPath: '/images/code.png',
     name: 'Bus Tracking Application',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum voluptates cum asperiores delectus sint dignissimos voluptate, facere sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!',
+      'A real-time bus tracking application designed to improve transit efficiency with live location updates, interactive maps, and seamless travel planning.',
+    shortDescription:
+      'A real-time bus tracking application designed to improve transit efficiency with live location updates, interactive maps, and seamless travel planning.',
+    technologies: [
+      'NodeJS',
+      'Kotlin',
+      'ReactJS',
+      'Javascript',
+      'Socket.IO',
+      'Android Jetpack Compose',
+    ],
   },
   {
     imgPath: '/images/code.png',
     name: 'Food Delivery Ecommerce Application',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum voluptates cum asperiores delectus sint dignissimos voluptate, facere sunt ad! Natus a in adipisci minima modi. Ipsum sapiente neque ullam!',
+      'A seamless food ordering application connecting users with restaurants for quick browsing, ordering, and tracking.',
+    shortDescription:
+      'A seamless food ordering application connecting users with restaurants for quick browsing, ordering, and tracking.',
+    technologies: ['Flutter', 'Firebase', 'Dart'],
   },
 ]

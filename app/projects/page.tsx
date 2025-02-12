@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     <>
       <section className="max-w-4xl mx-auto pb-4 px-6">
         <h2>Projects</h2>
-        <div className="flex flex-col gap-4 mt-6">
+        <div className="flex flex-col gap-8 mt-6">
           {projects.map((project) => (
             <ProjectItem key={project.name} project={project} />
           ))}
@@ -20,11 +20,14 @@ export default function ProjectsPage() {
 const ProjectItem = ({ project }: { project: Project }) => {
   return (
     <div className="flex items-start cursor-pointer group">
-      <div className="py-6">
-        <p className="text-xl font-medium mb-2">{project.name}</p>
-        <p className="text-base">{project.description}</p>
+      <div className="py-6 w-2/3">
+        <p className="text-2xl font-medium mb-1">{project.name}</p>
+        <p className="text-base text-light mb-1">
+          {project.technologies?.join(', ')}
+        </p>
+        <p className="text-base text-light">{project.description}</p>
       </div>
-      <div className="relative h-48 w-full bg-red rounded-2xl  overflow-hidden bg-white sm:h-44 lg:h-44">
+      <div className="relative h-48 w-60 bg-red rounded-2xl overflow-hidden bg-white sm:h-44 lg:h-44">
         <Image
           src={project.imgPath}
           fill
