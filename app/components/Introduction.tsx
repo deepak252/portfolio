@@ -4,11 +4,11 @@ import { ArrowRightIcon, DownloadIcon } from '../../components/icons'
 const Introduction = () => {
   return (
     <section className="dashboard-section flex flex-col items-center gap-5 text-center max-sm:pt-8">
-      <div className="relative size-32">
-        <Image src="/images/developer.png" fill alt="profile_pic" />
+      <div className="relative size-32 rounded-full overflow-hidden">
+        <Image src="/images/profile-md.png" fill alt="profile_pic" />
       </div>
       <h1 className="mt-2">
-        Hello, <br /> I&apos;m Deepak.
+        Hello 👋 <br /> I&apos;m Deepak.
       </h1>
       <p className="text-2xl leading-9 text-light">
         Software Engineer | Building Scalable <br />& Efficient Software

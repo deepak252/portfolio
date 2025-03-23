@@ -20,8 +20,8 @@ const experienceList: Experience[] = [
     title: 'Software Devloper',
     company: 'BYJUs, Gurugram',
     description: [
-      'Built core UI components and integrated key APIs for a CRM platform using ReactJS, HTML, CSS, and JavaScript, ensuring a seamless, responsive user experience and efficient data flow.',
-      'Optimized a Node.js-based Loan Management System with a microservices architecture, leveraging Redis, PostgreSQL, MongoDB, and AWS, resolving critical issues and improving processing efficiency by 25%.',
+      'Optimized Loan Management System with a microservices architecture, leveraging NodeJS, Java, Redis, PostgreSQL, MongoDB, and AWS, resolving critical issues and improving processing efficiency by 25%.',
+      'Developed core UI components for the Customer Relationship Management (CRM) platform using ReactJS, HTML, CSS, SCSS and JavaScript ensuring responsiveness and user experience.',
       'Automated end-to-end testing with Selenium, TestNG, and Java, achieving 90% test coverage and improving software reliability.',
     ],
   },

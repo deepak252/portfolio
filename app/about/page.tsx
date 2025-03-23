@@ -10,8 +10,8 @@ export default function AboutPage() {
           <div>
             <p className="text-lg text-light">
               Hello 👋 I&apos;m Deepak, a Software Engineer with 2.5+ years of
-              experience in frontend, micro-frontend, backend, and
-              microservices. I enjoy solving complex programming challenges,
+              experience in backend, microservices, frontend, and
+              micro-frontend. I enjoy solving complex programming challenges,
               staying ahead with the latest technologies, and building scalable,
               high-performance applications. Adaptable, quick to learn, and
               thrive in dynamic environments. I actively contribute to

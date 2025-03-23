@@ -14,8 +14,8 @@ const AboutMe = () => {
           />
         </div>
         <p className="text-lg text-light">
-          Software Engineer with 2.5+ years of experience in frontend,
-          micro-frontend, backend, and microservices. I enjoy solving complex
+          Software Engineer with 2.5+ years of experience in backend,
+          microservices, frontend, and micro-frontend. I enjoy solving complex
           programming challenges, staying ahead with the latest technologies,
           and building scalable, high-performance applications. An adaptable and
           quick learner who thrives in dynamic environments and actively
