@@ -2,6 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: Outfit;
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl font-medium;
+  }
+  h2 {
+    @apply text-4xl font-medium;
+  }
+  h3 {
+    @apply text-3xl font-medium;
+  }
+  h4 {
+    @apply text-2xl font-medium;
+  }
+  h5 {
+    @apply text-xl font-medium;
+  }
+  h6 {
+    @apply text-lg font-medium;
+  }
+
+  /* a {
+    @apply font-Ovo;
+  } */
+
+  input,
+  textarea {
+    @apply outline-none outline-offset-0 px-4 py-2.5 rounded-xl w-full resize-none bg-neutral-100 dark:bg-dark-800 focus:outline-blue-500;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
+    -webkit-text-fill-color: #000 !important;
+  }
+  .dark input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #1f2937 inset !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+@layer components {
+  .base-btn {
+    @apply flex-center gap-2 rounded-full border border-transparent px-6 font-medium py-2.5 lg:px-8;
+  }
+  .btn-outline-primary {
+    @apply base-btn border-gray-500 dark:border-white;
+  }
+  .btn-primary {
+    @apply base-btn bg-gray-800 dark:bg-white text-white dark:text-black;
+  }
+
+  .icon-btn {
+    @apply p-2 rounded-full bg-gray-600 dark:bg-gray-400 dark:bg-opacity-10 bg-opacity-10 hover:bg-opacity-15 active:bg-opacity-20;
+  }
+
+  .navbar {
+    @apply fixed top-2 left-2 right-2 z-navbar flex items-center justify-between border-transparent max-w-6xl mx-auto px-4 py-3 transition-all duration-100 lg:px-6;
+  }
+  .navbar.outlined,
+  .navbar ~ .sidebar {
+    @apply select-none rounded-xl backdrop-blur-2xl bg-white/80 dark:bg-dark-900/60 border-theme;
+  }
+
+  .icon {
+    @apply size-8 fill-black dark:fill-white dark:stroke-white;
+  }
+
+  .dashboard-section {
+    @apply max-w-6xl mx-auto pt-24 pb-12 px-6;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full px-1.5 py-1.5 border-2 border-blue-500 sm:text-lg;
+  }
+
+  .timeline-item {
+    @apply relative ms-6 pb-10 border-theme !border-[0] !border-l-[1.5px] last:border-none;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .border-theme {
+    @apply border-[1.5px] border-neutral-300/50 dark:border-dark-600/40;
+  }
+
+  .text-light {
+    @apply text-neutral-600 dark:text-neutral-300;
+  }
+}
+
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +121,4 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
