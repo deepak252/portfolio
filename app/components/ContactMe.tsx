@@ -17,7 +17,7 @@ export default function ContactMe() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const { name, email, message } = formData
-    const mailtoLink = `mailto:your_email@domain.com?subject=Contact from ${encodeURIComponent(
+    const mailtoLink = `mailto:deepakkudc16102000@gmail.com?subject=Contact from ${encodeURIComponent(
       name
     )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`
     window.location.href = mailtoLink
