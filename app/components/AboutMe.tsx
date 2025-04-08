@@ -13,14 +13,29 @@ const AboutMe = () => {
             className="rounded-xl object-cover"
           />
         </div>
-        <p className="text-lg text-light">
-          Software Engineer with 2.5+ years of experience in backend,
-          microservices, frontend, and micro-frontend. I enjoy solving complex
-          programming challenges, staying ahead with the latest technologies,
-          and building scalable, high-performance applications. An adaptable and
-          quick learner who thrives in dynamic environments and actively
-          contributes to collaborative teams—always up for a challenge.
-        </p>
+        <div>
+          <p className="text-lg text-light whitespace-pre-line mb-1">
+            I’m a Software Engineer with over 2.5 years of hands-on experience
+            in designing and developing backend systems, microservices
+            architectures, frontend interfaces, and micro-frontends. I
+            specialize in building scalable, high-performance applications and
+            enjoy solving complex engineering problems.
+            <br />
+          </p>
+          <p className="text-lg text-light whitespace-pre-line mb-1">
+            I completed my B.Tech in Computer Science from GGSIPU in 2023 with a
+            CGPA of 8.6. Outside of work, I’ve solved over 1200 problems on
+            LeetCode and CodeChef, constantly refining my problem-solving and
+            algorithmic thinking.
+          </p>
+          <p className="text-lg text-light whitespace-pre-line">
+            Known for being adaptable and proactive, I quickly grasp new
+            technologies and contribute effectively in dynamic, fast-paced
+            environments. I work well in cross-functional teams, ensuring smooth
+            communication and collaboration to drive projects forward and
+            deliver impactful results.
+          </p>
+        </div>
       </div>
     </section>
     // <section
